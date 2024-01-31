@@ -1,0 +1,178 @@
+{% extends './layout.html' %}<!--Contacto-->
+
+{% block title %} Contacto {% endblock %}
+
+{% block body %}
+<!--Section: Contact v.2-->
+<section class="mb-4 espacio">
+
+    <!--Section heading-->
+    <h1 class="text-center">Contáctanos</h1>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">¿Quieres saber más sobre nosotros? ¿Necesitas información? Por favor no dudes en contactarnos directamente. 
+        Nuestro equipo se contactará contigo a la brevedad para ayudarte.</p>
+
+    <form name="contacto" onsubmit="return validar();" action="https://formsubmit.co/herdsynch@gmail.com" method="POST">
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Ingresa tu nombre">
+                            <label for="name" class="">Nombre</label>
+                        <br/>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="phone" name="phone" class="form-control" placeholder="Ingresa un número telefónico">
+                            <label for="phone" class="">Teléfono</label>
+                            <br/>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Ingresa tu correo">
+                            <label for="email" class="">Correo</label>
+                            <br/>
+                        </div>
+                    </div>
+                
+                <!--Grid row-->
+
+                <!--Grid row-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="vacas" name="vacas" class="form-control" placeholder="Aproximado del N° de vacas que manejas">
+                            <label for="vacas" class="">N° de Vacas</label>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="zona" name="zona" class="form-control" placeholder="Zona en la que te encuentras">
+                            <label for="zona" class="">Localidad</label>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="3" class="form-control md-textarea" placeholder="Ingresa tu mensaje"></textarea>
+                            <label for="message">Mensaje / Motivo</label>
+                            <br/>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+            <div class="espacio2"></div>
+            <button type="submit"  style="border-color: transparent; border-radius: 11px; width: 310px; height: 48px;" onclick="validar();" >
+                <a class="con-btn" style="color: white;">Enviar</a>
+            </button>
+        </div>
+        <!--Grid column-->
+        </form>
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x" style="color: #FF9800;"></i>
+                    <p>Guadalajara, Jalisco, MX</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x" style="color: #FF9800;"></i>
+                    <p>(33) 12 55 09 70</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x" style="color: #FF9800;"></i>
+                    <a href="mailto:alanalanalana20@gmail.com?">
+                        <p>Herdsynch@gmail.com</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+    
+
+</section>
+
+<script type="text/javascript">
+    function validar() {
+      var form = document.contacto;
+      if (form.name.value==0){
+        alert("El nombre esta vacío, rellena este dato");
+        form.name.value="";
+        form.name.focus();
+        return false;
+      }
+      if (form.phone.value==0){
+        alert("El teléfono esta vacío, rellena este dato");
+        form.phone.value="";
+        form.phone.focus();
+        return false;
+      }
+      if (form.email.value==0){
+        alert("El correo esta vacío, rellena este dato");
+        form.email.value="";
+        form.email.focus();
+        return false;
+      }
+      if (form.vacas.value==0){
+        alert("La cantidad de vacas esta vacía, rellena este dato con el aproximado de animales que tienes");
+        form.vacas.value="";
+        form.vacas.focus();
+        return false;
+      }
+      if (form.zona.value==0){
+        alert("La zona esta vacía, rellena este dato");
+        form.zona.value="";
+        form.zona.focus();
+        return false;
+      }
+      if (form.message.value==0){
+        alert("El mensaje esta vacío, rellena este dato");
+        form.message.value="";
+        form.message.focus();
+        return false;
+      }
+
+    }
+  </script>
+
+
+<!--Section: Contact v.2-->
+{% endblock %}

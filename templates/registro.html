@@ -1,0 +1,48 @@
+{% extends './layout.html' %}<!--Registro-->
+
+{% block title %} Registrarse {% endblock %}
+
+{% block body %}
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <h1 class="fw-light" style="font-size: 75px;">Sección en construcción</h1>
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <p class="lead">Actualmente no contamos con una suscripción automática, si deseas suscribirte debes contactarnos en alguna de las siguientes opciones
+        para realizar tu suscripción.</p>
+      <div class="espacio2"></div>
+      
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+              <p>(33) 12 55 09 70</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 text-center">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <i class="fas fa-envelope mt-4 fa-2x"></i>
+              <a href="mailto:alanalanalana20@gmail.com?">
+                <p>Herdsynch@gmail.com</p>
+            </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="espacio2"></div>
+      <hr style="height:2px;border-width:0;color:#212121;background-color:#212121">
+      <div class="espacio2"></div>
+      <p class="lead">
+        U oprime el botón y rellena la información para que nuestro equipo pueda contactarte lo mas breve posible.
+      </p>
+      <p>
+        <a style="color: white;" href="{{ url_for('contacto')}}" class="det-btn my-2">Contacto</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

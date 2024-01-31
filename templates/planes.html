@@ -1,0 +1,261 @@
+{% extends './layout.html' %}<!--Planes-->
+
+{% block title %} Planes {% endblock %}
+
+{% block body %}
+<div class="espacio3"></div>
+<h1 style="text-align: center;">PLANES</h1>
+<div class="espacio3"></div>
+<table class="table">
+  <thead style="text-align: center;">
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Free</th>
+      <th scope="col">Básico</th>
+      <th scope="col">Registro</th>
+      <th scope="col">Gold</th>
+      <th scope="col">Personalizado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Costo mensual</th>
+      <td>Gratis</td>
+      <td>$200.00</td>
+      <td>$500.00</td>
+      <td>$500.00</td>
+      <td>Personalizado</td>
+    </tr>
+    <tr>
+      <th scope="row">Costo anual</th>
+      <td>Gratis</td>
+      <td>$2,200.00</td>
+      <td>$5,500.00</td>
+      <td>$5,500.00</td>
+      <td>Personalizado</td>
+    </tr>
+    <tr>
+      <th scope="row">Usuarios en app</th>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>Personalizado</td>
+    </tr>
+    <tr>
+      <th scope="row">Registro de Vacas</th>
+      <td>30</td>
+      <td>200</td>
+      <td>200</td>
+      <td>500</td>
+      <td>Personalizado</td>
+    </tr>
+    <tr>
+      <th scope="row">Registro de Becerros</th>
+      <td>30</td>
+      <td>200</td>
+      <td>200</td>
+      <td>500</td>
+      <td>Personalizado</td>
+    </tr>
+    <tr>
+      <th scope="row">Registro de Sementales</th>
+      <td>1</td>
+      <td>5</td>
+      <td>10</td>
+      <td>10</td>
+      <td>Personalizado</td>
+    </tr>
+    <tr >
+      <th scope="row">Carga masiva de Inventario (plantilla)</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Exportar información a excel</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Inventario general</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Inventario por lote</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Inventario de animales</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Inventario de material genético</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Inventario de alimento</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Registro de ranchos</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - potreros</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Catálogo lotes, razas y tipos de alimentos</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Catálogo causas no sincronizadas</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Costos de tratamientos</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Producción: Natalidad, mortalidad y destetes</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Reproducción: Información general</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">Web - Reproducción: Trabajos reproductivos</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Entradas nacimientos</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Entradas nuevo ingreso</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Reproducción: DX gestación</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Reproducción: Inseminación</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Reproducción: Receptoras</th>
+      <td id="td"></td>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td"></td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Salidas: Destetes, muertes y ventas</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Alimentación</th>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    <tr>
+      <th scope="row">App - Traspasos</th>
+      <td id="td"></td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+      <td id="td">✔</td>
+    </tr>
+    
+  </tbody>
+</table>
+<div class="espacio3"></div>
+
+<center><a style="color: white;" class="con-btn" href="{{ url_for('registro')}}">Contratar plan</a></center>
+
+<div class="espacio"></div>
+{% endblock %}
